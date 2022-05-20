@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+h2 span{
+  color: #ff9800;
+}
+
+.card-img-top {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#order .card-img-top:hover {
+  transform: scale(1.1);
+
+}
+
+#order-second .card-img-top {
+  width: 12rem;
+  height: 12rem;
+}
+
+#order-second .card {
+  padding: 2rem;
+}
+
+#order-second .row-cols-4 {
+  border: 1px solid #c3c3af;
+  padding: 1rem;
+  border-left: none;
+  border-right: none;
+  /* box-shadow: -17px 3px 20px #b1bab1; */
+  box-shadow: 17px -3px 20px #b1bab1;
+}
+ 
+#order h5 {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#order h5::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 186, 58);
+  left: 0;
+  bottom: 0;
+top:1.7rem;
+  transform: scale(0,1);
+  transition: transform 0.1s ease-in-out;
+} 
+
+#order h5:hover::after{
+  transform: scale(1,2);
+}
+
+
+#order-second .col{
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#order-second .card{
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+#order-second .card:hover {
+  transform: scale(1.1);
+}
+
+
